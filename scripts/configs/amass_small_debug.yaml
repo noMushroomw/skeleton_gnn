@@ -1,0 +1,31 @@
+run_dir: runs
+run_name: amass_small_debug
+seed: 0
+
+batch_size: 16
+max_steps: 300
+lr: 3.0e-4
+warmup_steps: 50
+ema_decay: 0.99
+amp_dtype: bfloat16
+num_workers: 2
+
+log_every: 10
+eval_every: 100
+save_every: 100
+eval_batches: 2
+eval_num_samples: 5
+eval_num_steps: 10
+
+model_preset: small_full
+model: {}
+
+flow:
+  sigma_dir: 0.35
+
+data:
+  path: data/data_3d_amass.npz
+  obs_length: 30
+  pred_length: 120
+  stride: 60
+  max_segments: 2000

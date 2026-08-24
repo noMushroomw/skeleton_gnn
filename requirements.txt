@@ -1,0 +1,10 @@
+torch>=2.4            # scaled_dot_product_attention with an additive float mask
+numpy>=1.24
+pyyaml>=6.0
+tqdm>=4.65
+
+
+matplotlib>=3.7
+pandas>=2.0
+jupyter>=1.0
+ipykernel>=6.0
